@@ -1,0 +1,16 @@
+title: Projeto E-mail mkt
+description: teste projeto
+template:
+  repo: projeto-e-mail-mkt-template
+  name: projeto-e-mail-mkt
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
